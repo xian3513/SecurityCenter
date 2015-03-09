@@ -7,7 +7,7 @@
 //
 
 #import "VerificationViewController.h"
-
+#import "CircleView.h"
 @interface VerificationViewController ()
 
 @end
@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    CircleView *circle = [[CircleView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) startAngle:-M_PI_2 endAngle:1.5*M_PI time:30];
+    [self.view addSubview:circle];
+    
+    circle.drawFinish = ^(){
+        NSLog(@"finish");
+    };
 }
 
 - (void)didReceiveMemoryWarning {
