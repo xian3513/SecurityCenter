@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="730" y="1437"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--设置-->
         <scene sceneID="Y8h-qt-ujY">
             <objects>
-                <viewController id="xBR-eq-oIo" customClass="SettingViewController" sceneMemberID="viewController">
+                <viewController title="设置" id="xBR-eq-oIo" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tVy-yJ-5Zk"/>
                         <viewControllerLayoutGuide type="bottom" id="7zl-C4-Mty"/>

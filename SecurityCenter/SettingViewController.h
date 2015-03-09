@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SettingViewController : BaseViewController
+@interface SettingViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

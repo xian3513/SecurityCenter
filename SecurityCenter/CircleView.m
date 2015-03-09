@@ -35,7 +35,7 @@ const CGFloat circleTimes = 300;
 }
 
 - (void)updateProgress {
-    NSLog(@"%@ flag:%.2f",NSStringFromSelector(_cmd),flag/circleTimes);
+   // NSLog(@"%@ flag:%.2f",NSStringFromSelector(_cmd),flag/circleTimes);
     if(flag++ == circleTimes) {
         self.drawFinish();
         [timer invalidate];

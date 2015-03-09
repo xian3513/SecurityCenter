@@ -17,6 +17,8 @@
 		68820F101AAD695600421D01 /* VerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68820F0F1AAD695600421D01 /* VerificationViewController.m */; };
 		68820F131AAD696100421D01 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68820F121AAD696100421D01 /* SettingViewController.m */; };
 		68820F161AAD876500421D01 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68820F151AAD876500421D01 /* CircleView.m */; };
+		68820F1D1AAD9E3800421D01 /* ShowCurrentDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68820F1C1AAD9E3800421D01 /* ShowCurrentDateView.m */; };
+		68820F201AADA4B900421D01 /* ShowNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68820F1F1AADA4B900421D01 /* ShowNumberView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		68820F121AAD696100421D01 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		68820F141AAD876500421D01 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		68820F151AAD876500421D01 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		68820F1B1AAD9E3800421D01 /* ShowCurrentDateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCurrentDateView.h; sourceTree = "<group>"; };
+		68820F1C1AAD9E3800421D01 /* ShowCurrentDateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCurrentDateView.m; sourceTree = "<group>"; };
+		68820F1E1AADA4B900421D01 /* ShowNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowNumberView.h; sourceTree = "<group>"; };
+		68820F1F1AADA4B900421D01 /* ShowNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowNumberView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +139,8 @@
 			children = (
 				68820F0B1AAD691100421D01 /* BaseViewController.h */,
 				68820F0C1AAD691100421D01 /* BaseViewController.m */,
-				68820F0E1AAD695600421D01 /* VerificationViewController.h */,
-				68820F0F1AAD695600421D01 /* VerificationViewController.m */,
-				68820F111AAD696100421D01 /* SettingViewController.h */,
-				68820F121AAD696100421D01 /* SettingViewController.m */,
+				68820F171AAD984400421D01 /* verificaton */,
+				68820F181AAD985D00421D01 /* setting */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -145,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				68820EEB1AAD679200421D01 /* Main.storyboard */,
-				68820F141AAD876500421D01 /* CircleView.h */,
-				68820F151AAD876500421D01 /* CircleView.m */,
+				68820F191AAD987000421D01 /* verificaton */,
+				68820F1A1AAD9E0800421D01 /* setting */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -156,6 +160,44 @@
 			children = (
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		68820F171AAD984400421D01 /* verificaton */ = {
+			isa = PBXGroup;
+			children = (
+				68820F0E1AAD695600421D01 /* VerificationViewController.h */,
+				68820F0F1AAD695600421D01 /* VerificationViewController.m */,
+			);
+			name = verificaton;
+			sourceTree = "<group>";
+		};
+		68820F181AAD985D00421D01 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				68820F111AAD696100421D01 /* SettingViewController.h */,
+				68820F121AAD696100421D01 /* SettingViewController.m */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
+		68820F191AAD987000421D01 /* verificaton */ = {
+			isa = PBXGroup;
+			children = (
+				68820F141AAD876500421D01 /* CircleView.h */,
+				68820F151AAD876500421D01 /* CircleView.m */,
+				68820F1E1AADA4B900421D01 /* ShowNumberView.h */,
+				68820F1F1AADA4B900421D01 /* ShowNumberView.m */,
+			);
+			name = verificaton;
+			sourceTree = "<group>";
+		};
+		68820F1A1AAD9E0800421D01 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				68820F1B1AAD9E3800421D01 /* ShowCurrentDateView.h */,
+				68820F1C1AAD9E3800421D01 /* ShowCurrentDateView.m */,
+			);
+			name = setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68820F201AADA4B900421D01 /* ShowNumberView.m in Sources */,
 				68820F101AAD695600421D01 /* VerificationViewController.m in Sources */,
 				68820F0D1AAD691100421D01 /* BaseViewController.m in Sources */,
 				68820F161AAD876500421D01 /* CircleView.m in Sources */,
+				68820F1D1AAD9E3800421D01 /* ShowCurrentDateView.m in Sources */,
 				68820EE71AAD679200421D01 /* AppDelegate.m in Sources */,
 				68820EE41AAD679200421D01 /* main.m in Sources */,
 				68820F131AAD696100421D01 /* SettingViewController.m in Sources */,
