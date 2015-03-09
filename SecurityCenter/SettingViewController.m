@@ -14,17 +14,22 @@
 
 @implementation SettingViewController {
     NSArray *dataArray;
+    UITableView *tab;
     ShowCurrentDateView *showCurrentDateView;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    UITableView *tab = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
-    tab.delegate = self;
-    tab.dataSource = self;
-    [self.view addSubview:tab];
     
-    showCurrentDateView = [[ShowCurrentDateView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+    
+    if(!tab) {
+        tab = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStyleGrouped];
+        tab.delegate = self;
+        tab.dataSource = self;
+        [self.view addSubview:tab];
+    }
+   showCurrentDateView = [[ShowCurrentDateView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 60)];
+    [tab reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
